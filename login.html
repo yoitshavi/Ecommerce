@@ -10,24 +10,56 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <h1>Dipped by Peyton</h1>
-    <nav>
-      <a href="./home.html">Home</a>
-      <a href="./products.html">Shop</a>
-      <a href="./checkout.html">Checkout Now</a>
-      <a href="./registration.html">Register Here</a>
-    </nav>
-    <h2>Login Here</h2>
-    <form>
-      <label for="email">Email</label>
-      <input type="email" id="email" />
-      <label for="pass">Password</label>
-      <input type="password" />
-      <input type="checkbox" value="lsRememberMe" id="rememberMe" />
-      <label for="rememberMe">Remember me</label>
-      <input type="submit" value="Login" onclick="lsRememberMe()" />
-    </form>
+  <body style="background-color: #ffd7d7 ;">
+    <div class="container nav">
+      <img src="./images/dipped-logo-PhotoRoom.png" alt="Dipped-Logo" />
+      <nav class="navl">
+        <div class="nav-links-container">
+          <a href="./home.html" class="nav__link">
+            <span class="nav__text">Home</span>
+            <ion-icon name="home-outline" size="large"></ion-icon>
+          </a>
+          <a href="./products.html" class="nav__link">
+            <span class="nav__text">Shop</span>
+            <ion-icon name="Shop-outline" size="large"></ion-icon>
+          </a>
+          <a href="./checkout.html" class="nav__link">
+            <span class="nav__text">Checkout</span>
+            <ion-icon name="checkout-outline" size="large"></ion-icon>
+          </a>
+          <a href="./registration.html" class="nav__link">
+            <span class="nav__text">Register Here</span>
+            <ion-icon name="registration-outline" size="large"></ion-icon>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="container login">
+      <div class="row mx-auto" id="login">
+        <div class="col">
+          <h2>Login Here</h2>
+        </div>
+      </div>
+      <div class="row mx-auto" id="login">
+          <form>
+            <div class="col">
+            <label for="email" class="form-label">Email</label>
+            
+            <input type="email" id="email" class="form-control"/>
+            </div>
+            <div class="col">
+            <label for="pass" class="form-label">Password</label>
+            <input type="password" class="form-control" />
+            </div>
+            <div class="col">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+            <input type="submit" value="Login" onclick="lsRememberMe()" />
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

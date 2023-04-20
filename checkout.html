@@ -10,168 +10,128 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <h1>Dipped by Peyton</h1>
-    <nav>
-      <a href="./home.html">Home</a>
-      <a href="./products.html">Shop</a>
-      <a href="./registration.html">Register Here</a>
-      <a href="./login.html">Login Here</a>
-    </nav>
-    <div class="row">
-      <div class="col-75">
-        <div class="container">
-          <form action="/action_page.php">
+  <body style="background-color: #ffd7d7;">
+    <div class="container nav">
+      <img src="./images/dipped-logo-PhotoRoom.png" alt="Dipped-Logo" />
+      <nav class="navl">
+        <div class="nav-links-container">
+          <a href="./home.html" class="nav__link">
+            <span class="nav__text">Home</span>
+            <ion-icon name="home-outline" size="large"></ion-icon>
+          </a>
+          <a href="./products.html" class="nav__link">
+            <span class="nav__text">Shop</span>
+            <ion-icon name="Shop-outline" size="large"></ion-icon>
+          </a>
+          <a href="./registration.html" class="nav__link">
+            <span class="nav__text">Register Here</span>
+            <ion-icon name="registration-outline" size="large"></ion-icon>
+          </a>
+          <a href="./login.html" class="nav__link">
+            <span class="nav__text">Login Here</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="container checkout">
+      <div class="credit-info">
+        <div class="credit-info-content">
             <div class="row">
-              <div class="col-50">
-                <h3>Billing Address</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="John M. Doe"
-                />
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="john@example.com"
-                />
-                <label for="adr"
-                  ><i class="fa fa-address-card-o"></i> Address</label
-                >
-                <input
-                  type="text"
-                  id="adr"
-                  name="address"
-                  placeholder="542 W. 15th Street"
-                />
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="New York"
-                />
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="state">State</label>
-                    <input
-                      type="text"
-                      id="state"
-                      name="state"
-                      placeholder="NY"
-                    />
-                  </div>
-                  <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input
-                      type="text"
-                      id="zip"
-                      name="zip"
-                      placeholder="10001"
-                    />
-                  </div>
-                </div>
+              <h2>Card Information<h2>
+            </div>
+            <div class="row">
+              
+                <label class="form-label">Card Number</label>
+                <input type="text" class="form-control" />
+             </div>
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Card Holder</label>
+                <input type="text" class="form-control" />
               </div>
-
-              <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color: navy"></i>
-                  <i class="fa fa-cc-amex" style="color: blue"></i>
-                  <i class="fa fa-cc-mastercard" style="color: red"></i>
-                  <i class="fa fa-cc-discover" style="color: orange"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input
-                  type="text"
-                  id="cname"
-                  name="cardname"
-                  placeholder="John More Doe"
-                />
-                <label for="ccnum">Credit card number</label>
-                <input
-                  type="text"
-                  id="ccnum"
-                  name="cardnumber"
-                  placeholder="1111-2222-3333-4444"
-                />
-                <label for="expmonth">Exp Month</label>
-                <input
-                  type="text"
-                  id="expmonth"
-                  name="expmonth"
-                  placeholder="September"
-                />
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input
-                      type="text"
-                      id="expyear"
-                      name="expyear"
-                      placeholder="2018"
-                    />
-                  </div>
-                  <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352" />
-                  </div>
-                </div>
+              </div>
+              <div class="row">
+            <div class="col-4">
+                <label class="form-label">EXP</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-4">
+                <label class="form-label">CVC</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-4">
+                <label class="form-label">Billing Zip</label>
+                <input type="text" class="form-control" />
               </div>
             </div>
-          </form>
         </div>
       </div>
+      <div class="container cart" id="checkout">
+        <div class="row">
+          <div class="col">
+            <table
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+            <tr>
+            <th>Cart</th>
+            </tr>
+                <tr>
+                  <td>
+                    Simple Drizzle
+                  </td>
+                  <td><span class="price">$25</span></td>
+                </tr>
+                <tr><td><hr /></td></tr>
+                <tr>
+                  <td>
+                   Breakable Heart with 1/2 DOZ Strawberries
+                  </td>
+                  
+                  <td><span class="price">$40</span></td>
 
-      <div class="col-25">
-        <div class="container">
-          <table align="center">
-            <th><h4>Cart</h4></th>
-            <tr>
-              <td>
-                <a href="#">Product 1</a>
-              </td>
-              <td><span class="price">$15</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#">Product 1</a>
-              </td>
-              <td><span class="price">$15</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#">Product 1</a>
-              </td>
-              <td><span class="price">$15</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#">Product 1</a>
-              </td>
-              <td><span class="price">$15</span></td>
-            </tr>
-
-            <tr>
-              <td>
-                <hr />
-                Total <span class="price" style="color: black"><b>$30</b></span>
-              </td>
-            </tr>
-          </table>
-          <input
-            type="submit"
-            value="Checkout"
-            class="btn"
-            style="border: 1px solid black"
-          />
+                </tr>
+<tr><td><hr /></td></tr>
+                <tr>
+                  <td>
+                    Apples
+                  </td>
+                  <td><span class="price">$25</span></td>
+                </tr>
+                <tr><td><hr /></td></tr>
+                <tr>
+                  <td>
+                  Cheesecake Cup
+                  </td>
+                  <td><span class="price">$8</span></td>
+                </tr>
+                <tr><td><hr /></td></tr>
+                <tr>
+                    
+                    <td>
+                    Total
+                    </td>
+                    <td>
+                    <span class="price" style="color: black"><b>$98</b></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      value="Checkout"
+                      class="btn"
+                      style="border: 1px solid #806a22;
+                      background-color:#ffd7d7;""
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
