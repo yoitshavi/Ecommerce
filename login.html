@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: #ffd7d7 ;">
+  <body style="background-color: #ffd7d7">
     <div class="container nav">
       <img src="./images/dipped-logo-PhotoRoom.png" alt="Dipped-Logo" />
       <nav class="navl">
@@ -34,30 +34,29 @@
         </div>
       </nav>
     </div>
-    <div class="container login">
-      <div class="row mx-auto" id="login">
+    <div class="container log">
+      <div class="row mx-auto login">
         <div class="col">
           <h2>Login Here</h2>
         </div>
       </div>
-      <div class="row mx-auto" id="login">
-          <form>
-            <div class="col">
+      <div class="row mx-auto login">
+        <form>
+          <div class="col">
             <label for="email" class="form-label">Email</label>
-            
-            <input type="email" id="email" class="form-control"/>
-            </div>
-            <div class="col">
-            <label for="pass" class="form-label">Password</label>
+
+            <input type="email" id="email" class="form-control" />
+          </div>
+          <div class="col">
+            <label class="form-label">Password</label>
             <input type="password" class="form-control" />
-            </div>
-            <div class="col">
+          </div>
+          <div class="col">
             <input type="checkbox" value="lsRememberMe" id="rememberMe" />
             <label for="rememberMe">Remember me</label>
             <input type="submit" value="Login" onclick="lsRememberMe()" />
           </div>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
     <script

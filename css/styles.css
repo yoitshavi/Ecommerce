@@ -103,6 +103,8 @@ div.card {
   border-radius: 1000px;
   width: 75%;
   margin: auto;
+  display: flex;
+  transition: all ease 0.2s;
 }
 .carousel {
   display: flex;
@@ -139,19 +141,14 @@ a:visited {
 a:active {
   text-decoration: none;
 }
-#carousel-slider {
-  slidestoscroll: 1;
-  autoplay: true;
-  autoplayspeed: 0.1s;
-  mobilefirst: tru;
-}
-.login {
+
+.log {
   font-size: xx-large;
   width: 50%;
   display: flex;
   flex-direction: column;
   background-color: #de9aa5;
-
+  padding-bottom: 10px;
   border-radius: 3px;
 }
 .nav {
