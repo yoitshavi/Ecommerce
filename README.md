@@ -16,7 +16,7 @@ Login
 ![Login Page](./images/login.png "Login")
 
 Registration
-![Registration Page](./images/registration.png "Registration")
+![Registration Page](./images/register.png "Registration")
 
 Checkout
 ![Checkout Page](./images/checkout.png "Checkout")
